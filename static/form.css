@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    background-image: url(/static/background.png);
+    background-size: 100% 800px;
+    background-attachment: fixed;
+}
+
+nav {
+    backdrop-filter: blur(1.3px);
+}
+
+#navbar1 {
+    color: white;
+}
+
+#navbar21 {
+    color: white;
+    float: right;
+    text-align: end;
+    padding-left: 500px;
+}
+
+#navbar22 {
+    color: white;
+    padding-left: 20px;
+}
+
+#navbar23 {
+    color: white;
+    padding-left: 20px;
+}
+
+#navbar3 {
+    color: white;
+    padding-left: 40px;
+
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    margin-top: 30px;
+}
+
+#content {
+    color: white;
+    border: 1px black solid;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    backdrop-filter: blur(1.3px);
+}

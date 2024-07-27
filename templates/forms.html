@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top ">
+        <a href="/home" class="navbar-brand" id="navbar1"><i class="fa-brands fa-space-awesome"></i> Tour &
+            Travel</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#expand" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expand">
+            <div class="navbar-nav">
+                <a href="/home" class="nav-link" id="navbar1"> <i class="fa-solid fa-house"></i> Home</a>
+                <a href="/contact" class="nav-link" id="navbar1"><i class="fa-solid fa-address-book"></i> Contact us</a>
+                <a href="#" class=" nav-link" id="navbar1"><i class="fa-solid fa-circle-question"></i> Help</a>
+
+                <a href="#" class=" nav-link" id="navbar3"><input type="text" placeholder="search"> <i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+
+                <a href="#" class=" nav-link" id="navbar21"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class=" nav-link" id="navbar22"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class=" nav-link" id="navbar23"><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="border: 2px white solid; border-radius: 5px; color: white; padding-bottom: 10px;">
+        <h2 class="display-1 text-center">Register Here</h2>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="row g-2">
+                <div class="mb-3 col-md-6">
+                    <label for="name">Write your name </label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Full name">
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="email">Write your email </label>
+                    <input type="email" class="form-control" id="email" name='email' placeholder="email">
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md-6 mb-3">
+                    <label for="state">Select your state</label>
+                    <select class="form-control" name="state" id="state">
+                        <option value="MH">Maharashtra</option>
+                        <option value="MP">Madhya pradesh</option>
+                        <option value="WB">West bengal</option>
+                    </select>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <label for="city">City</label>
+                    <input type="text" id="ci" class="form-control" name="city">
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <label for="city">Zip-code</label>
+                    <input type="number" id="Zip-code" class="form-control" name="zipcode">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="textarea">Write your suggestions</label>
+                <textarea class="form-control" id="textarea" placeholder="Any suggestions"
+                    name="suggestions"></textarea>
+                <!-- </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" name="checkbox" id="checkbox">
+                <label for="checkbox" class="form-check-label">sign me</label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" name="radio-button" id="radio">
+                <label for="radio" class="form-check-label">select me </label>
+            </div>
+            <div class="form-check form-switch mb-3">
+                <input type="checkbox" class="form-check-input" name="switch" id="switch">
+                <label for="switch" class="form-check-label">turn me on</label>
+            </div> -->
+                <a href=""><button class="btn btn-primary " type="submit">Submit</button></a>
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
